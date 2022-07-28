@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+  <label for="name" id="name-label">Name</label>
+  <input id="name" type="text" placeholder="Enter Your Name" required><br><br>
+
+  <label for="email" id="email-label">Email</label>
+  <input id="email" type="email" placeholder="Enter Your Email" required><br><br>
+
+   <label for="number" id="number-label">Number</label>
+  <input id="number" type="number" min="1" max="1000000000000" placeholder="Enter Your number"><br><br>
+
+  <div>Which option best describes your current role?</div>
+  <select id="dropdown">
+    <option value="Select current role" disabled selected>Select current role</option>
+    <option value="Student">Student</option>     
+    <option value="Full Time Job">Full Time Job</option>    
+    <option value="Full Time Learner">Full Time Learner</option>    
+    <option value="Prefer not to say">Prefer not to say</option>
+    <option value="Other">Other</option>
+  </select><br><br>
+
+  <div id="radio-div">Would you recommend freeCodeCamp to a friend?</div>
+  <input type="radio" id="Definitely" name="radio" value="Definitely" class="inline">
+  <label for="Definitely">Definitely<label><br>
+  <input type="radio" id="Maybe" name="radio" value="Maybe" class="inline">
+  <label for="Maybe">Maybe<label><br>
+  <input type="radio" id="Not-sure" name="radio" value="Not Sure" class="inline">
+  <label for="Not-sure">Not sure<label><br><br>
+
+  <div id="check-div">What would you like to see improved? (Check all that apply)</div>
+  <input type="checkbox" id="Videos" name="Videos" value="Videos" class="inline">
+  <label for="Videos">Videos</label><br>
+    <input type="checkbox" id="Wiki" name="Wiki" value="Wiki" class="inline">
+  <label for="Wiki">Wiki</label><br>
+  <input type="checkbox" id="Forum" name="Forum" value="Forum" class="inline">
+  <label for="Forum">Forum</label><br><br>
+
+  <div><label for="suggestions">Any comments or suggestions?</label></div>
+  <textarea id="suggestions" name="suggestions" rows="10" cols="30"></textarea><br><br>
+<input type="submit" value="Submit" id="submit">
+</form>
+</body>
+</html>
